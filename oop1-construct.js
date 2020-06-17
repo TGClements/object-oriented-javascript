@@ -196,6 +196,7 @@ const triangle = new Triangle(
   null,
   null
 );
+
 triangle.base = triangle.sides[0];
 triangle.height = 6.71;
 console.log(triangle);
