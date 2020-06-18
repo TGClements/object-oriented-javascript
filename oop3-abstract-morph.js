@@ -236,17 +236,17 @@ student.repeat();
 //3. Consider the following class:
 
 class Cook {
-  prepare(food1, food2, food3) {
+  prepare = (food1, food2, food3) => {
     console.log('The cook is cooking ' + food1, food2, food3);
-  }
-
-  prepare = function () {
-    console.log('The cook is cooking');
   };
+
+  prepare() {
+    console.log('The cook is cooking');
+  }
 
   explain = () => {
     console.log(
-      'what could you do to get the prepare function to print out the food items that are being passed in to the function?  Once you figure it out, Write down your thought process in this explain method.'
+      'By making the first function an arrow function, it takes precedence over the normal function, thus it will fire instead.'
     );
   };
 }
